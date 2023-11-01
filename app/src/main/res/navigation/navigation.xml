@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/agentsFragment">
+
+    <fragment
+        android:id="@+id/agentsFragment"
+        android:name="com.sokah.valorantapp.ui.view.fragments.AgentsFragment"
+        android:label="@string/agents"
+        tools:layout="@layout/fragment_agents">
+        <action
+            android:id="@+id/action_agentsFragment_to_agentDetailsFragment"
+            app:destination="@id/agentDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/agentDetailsFragment"
+        android:name="com.sokah.valorantapp.ui.view.fragments.AgentDetailsFragment"
+        android:label="@string/agent_details"
+        tools:layout="@layout/fragment_agent_details">
+        <argument
+            android:name="agentUuid"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_agentDetailsFragment_to_agentsFragment"
+            app:destination="@id/agentsFragment"
+            app:popUpTo="@id/agentsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/weaponListFragment"
+        android:name="com.sokah.valorantapp.ui.view.fragments.WeaponListFragment"
+        android:label="@string/weapons"
+        tools:layout="@layout/fragment_weapon_list">
+        <action
+            android:id="@+id/action_weaponListFragment_to_weaponDetailFragment"
+            app:destination="@id/weaponDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/weaponDetailFragment"
+        android:name="com.sokah.valorantapp.ui.view.fragments.WeaponDetailFragment"
+        android:label="@string/weapon_details"
+        tools:layout="@layout/fragment_weapon_detail">
+        <argument
+            android:name="weapon"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_weaponDetailFragment_to_weaponListFragment"
+            app:destination="@id/weaponListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/skinsFragment"
+        android:name="com.sokah.valorantapp.ui.view.fragments.SkinsFragment"
+        android:label="@string/skins"
+        tools:layout="@layout/skins_fragment" >
+        <action
+            android:id="@+id/action_skinsFragment_to_skinDetailFragment"
+            app:destination="@id/skinDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/skinDetailFragment"
+        android:name="com.sokah.valorantapp.ui.view.fragments.SkinDetailFragment"
+        android:label="Skin" >
+        <argument
+            android:name="skin"
+            app:argType="string" />
+    </fragment>
+</navigation>

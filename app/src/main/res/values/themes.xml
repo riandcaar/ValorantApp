@@ -1,0 +1,77 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.ValorantApp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryVariant">@color/red</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:textColor"> @color/white</item>
+        <!-- Secondary brand color. -->
+
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+
+
+    <item name="android:indeterminateTint">@color/red</item>
+    </style>
+
+
+    <style name="CustomChip" parent="Widget.MaterialComponents.Chip.Choice" >
+
+        <item name="chipBackgroundColor" >@color/chip_bg_color</item>
+        <item name="chipStrokeColor"> @color/red</item>
+        <item name="chipStrokeWidth">2dp</item>
+        <item name="android:textColor">@color/white</item>
+
+    </style>
+
+    <style name="SpinnerTheme" parent="android:Widget.DeviceDefault.Spinner">
+        <item name="android:background">@drawable/container_rounded_corners</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingRight">15dp</item>
+    </style>
+
+                           <!-- Text styles-->
+    <style name="Title" parent="TextAppearance.MaterialComponents.Headline5">
+
+        <item name="fontFamily" >@font/valorant_font</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">48sp</item>
+
+    </style>
+
+    <style name="CardTitle" parent="TextAppearance.MaterialComponents.Headline5">
+
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle"> bold</item>
+    </style>
+
+    <style name="content" parent="TextAppearance.MaterialComponents.Subtitle2">
+
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="subtitle" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="fontFamily" >@font/valorant_font</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">36sp</item>
+    </style>
+
+    <style name="subtitle2" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily" >@font/valorant_font</item>
+        <item name="android:textColor">@color/white</item>
+
+    </style>
+
+    <style name="subtitle3" parent="TextAppearance.MaterialComponents.Subtitle1">
+
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle"> bold</item>
+    </style>
+
+</resources>
